@@ -49,5 +49,12 @@ const server = http.createServer((req, res) => {
     });
 });
 
-// Export the app for Vercel's serverless environment
-module.exports = app;
+// Start the server if running locally
+if (require.main === module) {
+    server.listen(PORT, () => {
+        console.log(`Server is running on http://localhost:${PORT}`);
+    });
+}
+
+// Export the server for Vercel's serverless environment
+module.exports = server;
