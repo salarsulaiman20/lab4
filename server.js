@@ -49,7 +49,5 @@ const server = http.createServer((req, res) => {
     });
 });
 
-server.listen(PORT, () => {
-    console.log(`\x1b[32m%s\x1b[0m`, `🚀 Server running at http://localhost:${PORT}/`);
-    console.log(`Press Ctrl+C to stop the server`);
-});
+// Export the app for Vercel's serverless environment
+module.exports = app;
