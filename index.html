@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Salam | Basic Web App</title>
+    <meta name="description" content="A premium basic web app for Alan Salam featuring a dynamic counter.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <section class="glass-card">
+            <header>
+                <h1 id="user-name">Alan Salam</h1>
+                <p class="subtitle">Cloud Deployment Lab</p>
+            </header>
+
+            <div class="counter-section">
+                <div class="counter-display">
+                    <span id="counter-value">0</span>
+                </div>
+                <button id="increment-btn" class="btn-primary">
+                    <span class="btn-text">Increment Counter</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+
+            <footer>
+                <p>Deploying to the Public Cloud with Vercel</p>
+            </footer>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
