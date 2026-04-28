@@ -1,0 +1,11 @@
+{
+  "name": "alan-salam-lab4",
+  "version": "1.0.0",
+  "description": "A basic web app for Cloud Deployment Lab",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {}
+}
